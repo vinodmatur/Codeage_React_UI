@@ -1,0 +1,114 @@
+.menu-bars {
+  margin-right: 8px;
+  font-size: 2rem;
+  background: none;
+  display: flex;
+}
+.nav-menu {
+  background-color: #263137;
+  width: 225px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 60px;
+}
+ul.nav-menu-items {
+  padding: 0;
+  width: 100%;
+}
+.mainWrapper .nav-menu {
+  height: 100vh;
+  left: 0;
+  transition: 350ms;
+}
+.mainWrapper.active .nav-menu {
+  left: 0;
+  transition: 350ms;
+  width: 0px;
+}
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 8px 8px 15px;
+  list-style: none;
+  height: 60px;
+}
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  border-radius: 4px;
+}
+.nav-text a:hover {
+  background-color: #4c545f;
+}
+.nav-text span {
+  margin-left: 10px;
+  max-width: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+button.homeBars {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  display: flex;
+  cursor: pointer;
+}
+.content-wrapper {
+  justify-content: start;
+  align-items: flex-start;
+  align-items: center;
+  padding-top: 80px;
+  min-height: 100vh;
+  transition: padding-left 0.3s;
+  flex: 1;
+  padding-left: 250px;
+  padding-right: 20px;
+}
+button.homeBars img {
+  width: 30px;
+  height: 30px;
+}
+.nav-text a.active {
+  background-color: #4c545f;
+}
+.nav-text a img {
+  width: 32px px;
+  height: auto;
+  margin-left: 12px;
+}
+.mainWrapper.active .content-wrapper {
+  padding-left: 25px;
+}
+.mainWrapper .content-wrapper {
+  padding-left: 250px;
+}
+.mainWrapper.active .nav-menu .nav-text span {
+  display: none;
+  transition: 0ms;
+}
+.mainWrapper .nav-menu .nav-text span {
+  display: block;
+}
+.error-page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  height: 81vh;
+}
